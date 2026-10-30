@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - M.Khairul Umardi Latif</title>
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body class="auth-page">
+  <div class="auth-card">
+    <h2>Register</h2>
+    <p class="subtitle">Isi data di bawah untuk membuat akun</p>
+
+    <form action="login.html">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Nama kamu" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="nama@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Minimal 8 karakter" minlength="8" required>
+      </div>
+      <div class="form-group">
+        <label for="konfirmasi">Konfirmasi Password</label>
+        <input type="password" id="konfirmasi" placeholder="Ulangi password" minlength="8" required>
+      </div>
+      <label class="checkbox"><input type="checkbox" required> Saya setuju dengan syarat &amp; ketentuan</label>
+      <button type="submit" class="btn btn-primary btn-block">Buat Akun</button>
+    </form>
+
+    <p class="switch">Sudah punya akun? <a href="login.html">Login</a></p>
+  </div>
+</body>
+</html>

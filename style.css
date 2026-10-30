@@ -1,0 +1,136 @@
+/* ===== WARNA ===== */
+:root {
+  --bg: #eef3f9;       /* latar halaman */
+  --white: #ffffff;    /* latar kartu & navbar */
+  --border: #d5dfeb;   /* garis tepi */
+  --primary: #2563eb;  /* warna utama (biru) */
+  --primary-dark: #1d4ed8;
+  --text: #0f172a;     /* teks utama */
+  --muted: #475569;    /* teks abu */
+}
+
+/* ===== DASAR ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  /* supaya footer selalu di paling bawah layar */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a { color: var(--primary); text-decoration: none; }
+
+/* ===== TOMBOL ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn-primary { background: var(--primary); color: var(--white); }
+.btn-primary:hover { background: var(--primary-dark); border-color: var(--primary-dark); }
+.btn-outline { background: transparent; color: var(--primary); }
+.btn-outline:hover { background: var(--primary); color: var(--white); }
+.btn-block { width: 100%; margin-top: 10px; }
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* tombol Login & Register di kanan */
+  align-items: center;
+  padding: 16px 8%;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+.navbar nav { display: flex; gap: 10px; }
+
+/* ===== HERO ===== */
+.hero {
+  flex: 1; /* isi ruang kosong, footer terdorong ke bawah */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 8%;
+}
+.hero h1 { font-size: 40px; margin-bottom: 24px; }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+/* ===== HALAMAN LOGIN & REGISTER ===== */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  /* cahaya biru tipis di bagian atas */
+  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.18), transparent 60%), var(--bg);
+}
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #e2eaf4;
+  border: 1px solid #c9d6e6;
+  border-top: 4px solid var(--primary); /* garis biru di atas kartu */
+  border-radius: 16px;
+  padding: 28px 28px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+.auth-card h2 { font-size: 28px; text-align: center; }
+.subtitle { text-align: center; color: var(--muted); margin-bottom: 18px; }
+.auth-card a { color: #0e7490; }
+.auth-card .switch a { font-weight: bold; }
+
+/* tombol gradasi cyan -> biru */
+.auth-card .btn-primary {
+  background: linear-gradient(135deg, #06b6d4, #2563eb);
+  border-color: transparent;
+}
+
+/* ===== FORM ===== */
+.form-group { margin-bottom: 12px; }
+.form-group label { display: block; margin-bottom: 4px; font-size: 14px; color: var(--muted); }
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #f8fbff;
+  border: 1px solid #c9d6e6;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.checkbox { display: flex; align-items: center; gap: 6px; font-size: 14px; margin-bottom: 10px; }
+.form-row .checkbox { margin-bottom: 0; }
+.switch { text-align: center; margin-top: 14px; font-size: 14px; color: var(--muted); }
+
+/* ===== RESPONSIF (HP) ===== */
+@media (max-width: 700px) {
+  .navbar { flex-direction: column; gap: 12px; }
+  .hero h1 { font-size: 28px; }
+}
