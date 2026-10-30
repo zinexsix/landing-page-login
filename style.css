@@ -120,12 +120,12 @@ a { color: var(--link); text-decoration: none; }
 .auth-page {
   justify-content: center;
   align-items: center;
-  padding: 32px 16px;
+  padding: 16px;
 }
 .auth-card {
   width: 100%;
   max-width: 420px;
-  padding: 32px 30px;
+  padding: 22px 28px;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(12px); /* efek kaca buram */
   border: 1px solid var(--border);
@@ -134,26 +134,26 @@ a { color: var(--link); text-decoration: none; }
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
 }
 .auth-icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 14px;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 26px;
+  font-size: 20px;
   border-radius: 50%;
   background: var(--gradient);
   box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
 }
-.auth-card h2 { text-align: center; font-size: 24px; font-weight: 600; }
-.subtitle { text-align: center; color: var(--muted); font-size: 14px; margin-bottom: 22px; }
+.auth-card h2 { text-align: center; font-size: 22px; font-weight: 600; }
+.subtitle { text-align: center; color: var(--muted); font-size: 14px; margin-bottom: 14px; }
 
 /* ===== FORM ===== */
-.form-group { margin-bottom: 12px; }
-.form-group label { display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500; }
+.form-group { margin-bottom: 8px; }
+.form-group label { display: block; margin-bottom: 2px; font-size: 14px; font-weight: 500; }
 .form-group input {
   width: 100%;
-  padding: 10px 14px;
+  padding: 8px 14px;
   background: var(--input);
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -183,9 +183,9 @@ a { color: var(--link); text-decoration: none; }
 }
 .form-row .checkbox { margin-bottom: 0; }
 .checkbox input { accent-color: var(--primary); }
-.switch { text-align: center; margin-top: 16px; font-size: 14px; color: var(--muted); }
+.switch { text-align: center; margin-top: 10px; font-size: 14px; color: var(--muted); }
 .switch a { font-weight: 600; }
-.back-link { margin-top: 18px; font-size: 14px; color: var(--muted); }
+.back-link { margin-top: 10px; font-size: 14px; color: var(--muted); }
 .back-link:hover { color: var(--primary); }
 
 /* ===== RESPONSIF (HP) ===== */
